@@ -6,6 +6,8 @@ MCP server allow-list for Kiro enterprise governance. Host this over HTTPS and c
 
 **Schema reference:** [Kiro MCP Registry JSON Schema](https://kiro.dev/docs/enterprise/governance/mcp/#mcp-registry-json-schema)
 
+> **Disclaimer:** This registry is provided for testing and evaluation purposes only. It is not intended for production or critical environments. Users should thoroughly review and test all configurations before use. The author assumes no liability for any issues, costs, or damages arising from the use of this registry.
+
 ---
 
 ## Files
@@ -153,4 +155,4 @@ Kiro relaunches with the new version within 24 hours or on next startup.
 | Lucid | [Lucid Help Center](https://lucidco.zendesk.com/hc/en-us/articles/42578801807508) |
 | GitHub | [GitHub Docs](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/set-up-the-github-mcp-server) |
 | Figma | [Figma Learn](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server) |
-| Dynatrace | [npm](https://www.npmjs.com/package/@dynatrace-oss/dynatrace-mcp-server) · [GitHub](https://github.com/dynatrace-oss/dynatrace-mcp) |
+| Dynatrace | [Dynatrace Docs](https://docs.dynatrace.com/docs/dynatrace-intelligence/dynatrace-mcp) |

@@ -125,21 +125,18 @@
     },
     {
       "server": {
-        "name": "dynatrace-mcp-server",
+        "name": "dynatrace-mcp",
         "title": "Dynatrace",
         "description": "Interact with Dynatrace observability platform for monitoring and debugging.",
-        "version": "1.7.3",
-        "packages": [
+        "version": "0.1.0",
+        "remotes": [
           {
-            "registryType": "npm",
-            "identifier": "@dynatrace-oss/dynatrace-mcp-server",
-            "transport": {
-              "type": "stdio"
-            },
-            "environmentVariables": [
+            "type": "streamable-http",
+            "url": "https://${DT_TENANT_NAME}.apps.dynatrace.com/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
+            "headers": [
               {
-                "name": "DT_ENVIRONMENT",
-                "value": "${DT_ENVIRONMENT}"
+                "name": "Authorization",
+                "value": "Bearer ${DT_BEARER_TOKEN}"
               }
             ]
           }
