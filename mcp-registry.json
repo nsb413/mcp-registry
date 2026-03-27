@@ -77,7 +77,13 @@
         "remotes": [
           {
             "type": "streamable-http",
-            "url": "https://api.githubcopilot.com/mcp/"
+            "url": "https://api.githubcopilot.com/mcp/",
+            "headers": [
+              {
+                "name": "Authorization",
+                "value": "Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}"
+              }
+            ]
           }
         ]
       }
