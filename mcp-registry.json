@@ -1,0 +1,123 @@
+{
+  "servers": [
+    {
+      "server": {
+        "name": "aws-documentation-mcp-server",
+        "title": "AWS Documentation MCP",
+        "description": "Access AWS documentation, search for content, and get recommendations.",
+        "version": "1.1.20",
+        "packages": [
+          {
+            "registryType": "pypi",
+            "identifier": "awslabs.aws-documentation-mcp-server",
+            "transport": {
+              "type": "stdio"
+            },
+            "environmentVariables": [
+              {
+                "name": "FASTMCP_LOG_LEVEL",
+                "value": "ERROR"
+              },
+              {
+                "name": "AWS_DOCUMENTATION_PARTITION",
+                "value": "aws"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "server": {
+        "name": "aws-support-mcp-server",
+        "title": "AWS Support MCP",
+        "description": "Create and manage AWS support cases programmatically.",
+        "version": "0.1.18",
+        "packages": [
+          {
+            "registryType": "pypi",
+            "identifier": "awslabs.aws-support-mcp-server",
+            "transport": {
+              "type": "stdio"
+            },
+            "environmentVariables": [
+              {
+                "name": "FASTMCP_LOG_LEVEL",
+                "value": "ERROR"
+              },
+              {
+                "name": "AWS_REGION",
+                "value": "us-east-1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "server": {
+        "name": "lucid-mcp-server",
+        "title": "Lucid",
+        "description": "Interact with Lucidchart and Lucidspark documents via AI tools.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.lucid.app/mcp"
+          }
+        ]
+      }
+    },
+    {
+      "server": {
+        "name": "github-mcp-server",
+        "title": "GitHub",
+        "description": "GitHub MCP server for repository and code context.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://api.githubcopilot.com/mcp/"
+          }
+        ]
+      }
+    },
+    {
+      "server": {
+        "name": "figma-mcp-server",
+        "title": "Figma",
+        "description": "Access Figma design data and Dev Mode context.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "https://mcp.figma.com/mcp"
+          }
+        ]
+      }
+    },
+    {
+      "server": {
+        "name": "dynatrace-mcp-server",
+        "title": "Dynatrace",
+        "description": "Interact with Dynatrace observability platform for monitoring and debugging.",
+        "version": "1.7.3",
+        "packages": [
+          {
+            "registryType": "npm",
+            "identifier": "@dynatrace-oss/dynatrace-mcp-server",
+            "transport": {
+              "type": "stdio"
+            },
+            "environmentVariables": [
+              {
+                "name": "DT_ENVIRONMENT",
+                "value": "${DT_ENVIRONMENT}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
