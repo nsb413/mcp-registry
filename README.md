@@ -135,5 +135,19 @@ Kiro relaunches with the new version within 24 hours or on next startup.
 
 ## References
 
+### Kiro
+
 - [Kiro MCP Governance Docs](https://kiro.dev/docs/enterprise/governance/mcp/)
+- [Kiro MCP Registry JSON Schema](https://kiro.dev/docs/enterprise/governance/mcp/#mcp-registry-json-schema)
 - [MCP Registry Open Standard](https://github.com/modelcontextprotocol/registry)
+
+### Servers in this registry
+
+| Server | Docs |
+|---|---|
+| AWS Documentation MCP | [awslabs.github.io](https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server) · [PyPI](https://pypi.org/project/awslabs.aws-documentation-mcp-server/) |
+| AWS Support MCP | [awslabs.github.io](https://awslabs.github.io/mcp/servers/aws-support-mcp-server) · [PyPI](https://pypi.org/project/awslabs.aws-support-mcp-server/) |
+| Lucid | [Lucid Help Center](https://lucidco.zendesk.com/hc/en-us/articles/42578801807508) |
+| GitHub | [GitHub Docs](https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/set-up-the-github-mcp-server) |
+| Figma | [Figma Learn](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server) |
+| Dynatrace | [npm](https://www.npmjs.com/package/@dynatrace-oss/dynatrace-mcp-server) · [GitHub](https://github.com/dynatrace-oss/dynatrace-mcp) |
