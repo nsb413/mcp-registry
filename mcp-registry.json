@@ -40,6 +40,16 @@
             "transport": {
               "type": "stdio"
             },
+            "runtimeArguments": [
+              {
+                "type": "positional",
+                "value": "--with"
+              },
+              {
+                "type": "positional",
+                "value": "botocore[crt]"
+              }
+            ],
             "environmentVariables": [
               {
                 "name": "FASTMCP_LOG_LEVEL",
