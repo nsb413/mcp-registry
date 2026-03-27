@@ -98,6 +98,33 @@
     },
     {
       "server": {
+        "name": "aws-billing-cost-management-mcp-server",
+        "title": "AWS Billing and Cost Management MCP",
+        "description": "Analyze AWS costs, budgets, savings plans, and cost optimization recommendations.",
+        "version": "0.0.16",
+        "packages": [
+          {
+            "registryType": "pypi",
+            "identifier": "awslabs.billing-cost-management-mcp-server",
+            "transport": {
+              "type": "stdio"
+            },
+            "environmentVariables": [
+              {
+                "name": "FASTMCP_LOG_LEVEL",
+                "value": "ERROR"
+              },
+              {
+                "name": "AWS_REGION",
+                "value": "us-east-1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "server": {
         "name": "dynatrace-mcp-server",
         "title": "Dynatrace",
         "description": "Interact with Dynatrace observability platform for monitoring and debugging.",
