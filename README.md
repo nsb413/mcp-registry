@@ -2,6 +2,8 @@
 
 MCP server allow-list for Kiro enterprise governance. Host this over HTTPS and configure the URL in the Kiro admin console to control which MCP servers your users can access.
 
+> **Disclaimer:** This registry is provided for testing and evaluation purposes only. It is not intended for production or critical environments. Users are responsible for reviewing, testing, and validating all configurations before any deployment. The author assumes no liability for any issues, damages, or costs arising from the use of this registry.
+
 **Schema reference:** [Kiro MCP Registry JSON Schema](https://kiro.dev/docs/enterprise/governance/mcp/#mcp-registry-json-schema)
 
 ---
