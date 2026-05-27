@@ -4,8 +4,7 @@
         "server": {
           "name": "aws-mcp",
           "title": "AWS MCP Server",
-          "description": "AWS MCP server for documentation, recommendations, and
-  operations via SigV4 proxy",
+          "description": "AWS MCP server for documentation, recommendations, and operations via SigV4 proxy",
           "version": "1.0.0",
           "packages": [
             {
