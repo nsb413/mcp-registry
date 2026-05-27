@@ -1,203 +1,28 @@
 {
-  "servers": [
-    {
-      "server": {
-        "name": "aws-documentation-mcp-server",
-        "title": "AWS Documentation MCP",
-        "description": "Access AWS documentation, search for content, and get recommendations.",
-        "version": "1.1.20",
-        "packages": [
-          {
-            "registryType": "pypi",
-            "identifier": "awslabs.aws-documentation-mcp-server",
-            "transport": {
-              "type": "stdio"
-            },
-            "environmentVariables": [
-              {
-                "name": "FASTMCP_LOG_LEVEL",
-                "value": "ERROR"
+    "servers": [
+      {
+        "server": {
+          "name": "aws-mcp",
+          "title": "AWS MCP Server",
+          "description": "Managed AWS MCP server providing access to AWS
+  documentation, recommendations, and operations via SigV4-authenticated proxy",
+          "version": "1.0.0",
+          "packages": [
+            {
+              "registryType": "pypi",
+              "identifier": "mcp-proxy-for-aws",
+              "transport": {
+                "type": "stdio"
               },
-              {
-                "name": "AWS_DOCUMENTATION_PARTITION",
-                "value": "aws"
-              }
-            ]
-          }
-        ]
+              "runtimeArguments": [],
+              "packageArguments": [
+                { "type": "positional", "value":
+  "https://aws-mcp.us-east-1.api.aws/mcp" }
+              ],
+              "environmentVariables": []
+            }
+          ]
+        }
       }
-    },
-    {
-      "server": {
-        "name": "aws-support-mcp-server",
-        "title": "AWS Support MCP",
-        "description": "Create and manage AWS support cases programmatically.",
-        "version": "0.1.18",
-        "packages": [
-          {
-            "registryType": "pypi",
-            "identifier": "awslabs.aws-support-mcp-server",
-            "transport": {
-              "type": "stdio"
-            },
-            "environmentVariables": [
-              {
-                "name": "FASTMCP_LOG_LEVEL",
-                "value": "ERROR"
-              },
-              {
-                "name": "AWS_REGION",
-                "value": "us-east-1"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "server": {
-        "name": "aws-knowledge-mcp-server",
-        "title": "AWS Knowledge MCP",
-        "description": "aws-knowledge-mcp-server",
-        "version": "1.0.0",
-        "remotes": [
-          {
-            "type": "streamable-http",
-            "url": "https://knowledge-mcp.global.api.aws"
-          }
-        ]
-      }
-    },
-    {
-      "server": {
-        "name": "lucid-mcp-server",
-        "title": "Lucid",
-        "description": "Interact with Lucidchart and Lucidspark documents via AI tools.",
-        "version": "1.0.0",
-        "remotes": [
-          {
-            "type": "streamable-http",
-            "url": "https://mcp.lucid.app/mcp"
-          }
-        ]
-      }
-    },
-    {
-      "server": {
-        "name": "github-mcp-server",
-        "title": "GitHub",
-        "description": "GitHub MCP server for repository and code context.",
-        "version": "1.0.0",
-        "remotes": [
-          {
-            "type": "streamable-http",
-            "url": "https://api.githubcopilot.com/mcp/"
-          }
-        ]
-      }
-    },
-    {
-      "server": {
-        "name": "figma-mcp-server",
-        "title": "Figma",
-        "description": "Access Figma design data and Dev Mode context.",
-        "version": "1.0.0",
-        "remotes": [
-          {
-            "type": "streamable-http",
-            "url": "https://mcp.figma.com/mcp"
-          }
-        ]
-      }
-    },
-    {
-      "server": {
-        "name": "aws-billing-cost-management-mcp-server",
-        "title": "AWS Billing and Cost Management MCP",
-        "description": "Analyze AWS costs, budgets, savings plans, and cost optimization recommendations.",
-        "version": "0.0.16",
-        "packages": [
-          {
-            "registryType": "pypi",
-            "identifier": "awslabs.billing-cost-management-mcp-server",
-            "transport": {
-              "type": "stdio"
-            },
-            "environmentVariables": [
-              {
-                "name": "FASTMCP_LOG_LEVEL",
-                "value": "ERROR"
-              },
-              {
-                "name": "AWS_REGION",
-                "value": "us-east-1"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "server": {
-        "name": "Non-PROD-dynatrace-mcp",
-        "title": "Dynatrace",
-        "description": "Interact with Dynatrace observability platform for monitoring and debugging.",
-        "version": "0.1.0",
-        "remotes": [
-          {
-            "type": "streamable-http",
-            "url": "https://ualpre.apps.dynatrace.com/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
-            "headers": [
-              {
-                "name": "Authorization",
-                "value": "Bearer ${DT_BEARER_TOKEN}"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "server": {
-        "name": "atlassian-mcp-server",
-        "title": "Atlassian Jira & Confluence",
-        "description": "Interact with Jira issues, Confluence pages, and Atlassian tools.",
-        "version": "1.0.0",
-        "remotes": [
-          {
-            "type": "streamable-http",
-            "url": "https://mcp.atlassian.com/v1/mcp"
-          }
-        ]
-      }
-    },
-    {
-      "server": {
-        "name": "aws-mcp",
-        "title": "AWS MCP",
-        "description": "Access AWS services through natural language with SigV4 authentication via MCP Proxy for AWS.",
-        "version": "1.0.0",
-        "packages": [
-          {
-            "registryType": "pypi",
-            "identifier": "mcp-proxy-for-aws",
-            "transport": {
-              "type": "stdio"
-            },
-            "runtimeArgs": [
-              "https://aws-mcp.us-east-1.api.aws/mcp",
-              "--metadata",
-              "AWS_REGION=us-east-1"
-            ],
-            "environmentVariables": [
-              {
-                "name": "FASTMCP_LOG_LEVEL",
-                "value": "ERROR"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ]
-}
+    ]
+  }
