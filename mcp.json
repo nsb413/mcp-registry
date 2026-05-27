@@ -1,28 +1,29 @@
 {
-    "servers": [
-      {
-        "server": {
-          "name": "aws-mcp",
-          "title": "AWS MCP Server",
-          "description": "Managed AWS MCP server providing access to AWS
-  documentation, recommendations, and operations via SigV4-authenticated proxy",
-          "version": "1.0.0",
-          "packages": [
-            {
-              "registryType": "pypi",
-              "identifier": "mcp-proxy-for-aws",
-              "transport": {
-                "type": "stdio"
-              },
-              "runtimeArguments": [],
-              "packageArguments": [
-                { "type": "positional", "value":
-  "https://aws-mcp.us-east-1.api.aws/mcp" }
-              ],
-              "environmentVariables": []
-            }
-          ]
-        }
+  "servers": [
+    {
+      "server": {
+        "name": "aws-mcp",
+        "title": "AWS MCP Server",
+        "description": "Managed AWS MCP server providing access to AWS documentation, recommendations, and operations via SigV4-authenticated proxy",
+        "version": "1.0.0",
+        "packages": [
+          {
+            "registryType": "pypi",
+            "identifier": "mcp-proxy-for-aws",
+            "transport": {
+              "type": "stdio"
+            },
+            "runtimeArguments": [],
+            "packageArguments": [
+              {
+                "type": "positional",
+                "value": "https://aws-mcp.us-east-1.api.aws/mcp"
+              }
+            ],
+            "environmentVariables": []
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
+}
